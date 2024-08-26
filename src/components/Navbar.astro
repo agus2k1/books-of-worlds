@@ -1,0 +1,114 @@
+---
+interface Props {
+	text1: string
+	text2: string
+	text3: string
+	text4: string
+}
+
+const { text1, text2, text3, text4 } = Astro.props
+---
+
+<nav class="navbar">
+	<div class="cinzel-decorative-bold logo">BOW</div>
+	<ul class="items">
+		<li>
+			<a href="#">
+				{text1}
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				{text2}
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				{text3}
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				{text4}
+			</a>
+		</li>
+	</ul>
+	<div class="right">SIGN IN</div>
+</nav>
+
+<style>
+	.navbar {
+		max-width: 100%;
+		width: 100%;
+		margin: 1.2rem 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.logo,
+	.right {
+		flex: 1; /* Cada div ocupa el mismo espacio */
+		display: flex;
+		color: #982b1c;
+	}
+
+	.logo {
+		font-size: 3rem;
+		justify-content: left;
+		margin-left: 2.5rem;
+	}
+
+	.right {
+		font-size: 1rem;
+		justify-content: right;
+		margin-right: 2.5rem;
+	}
+
+	.items {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+		background-color: #800000;
+		border-radius: 9999px;
+		padding: 0 5rem;
+	}
+
+	.items > li {
+		list-style: none;
+		flex-grow: 1;
+		position: relative;
+		display: flex;
+		align-items: center;
+	}
+
+	.items > li > a {
+		text-decoration: none;
+		color: white;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 1.5rem 2.5rem;
+		border-radius: 8px;
+	}
+
+	.items > li::after {
+		content: '';
+		position: absolute;
+		right: 0;
+		bottom: -10px;
+		z-index: -1;
+		width: 12%;
+		height: 20px;
+		background-color: red;
+		transform: translateY(-200%);
+		transition: transform 0.3s ease-in-out;
+	}
+
+	.items > li:hover::after {
+		transform: translateY(0);
+	}
+</style>
