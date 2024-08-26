@@ -1,9 +1,9 @@
 ---
 interface Props {
-	title: string;
+	title: string
 }
 
-const { title } = Astro.props;
+const { title } = Astro.props
 ---
 
 <!doctype html>
@@ -21,10 +21,13 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
+	@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@100..900&display=swap');
+
 	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
+		--accent: 107, 142, 35; /* Verde Vintage */
+		--accent-light: 135, 206, 235; /* Celeste Vintage */
+		--accent-dark: 85, 107, 47; /* Verde más oscuro */
 		--accent-gradient: linear-gradient(
 			45deg,
 			rgb(var(--accent)),
@@ -33,18 +36,100 @@ const { title } = Astro.props;
 		);
 	}
 	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
+		background: #f2e8c6;
 	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
+	body {
+		margin: 0;
+	}
+
+	.cinzel-decorative-regular {
+		font-family: 'Cinzel Decorative', serif;
+		font-weight: 400;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	.cinzel-decorative-bold {
+		font-family: 'Cinzel Decorative', serif;
+		font-weight: 700;
+		font-style: normal;
+	}
+
+	.cinzel-decorative-black {
+		font-family: 'Cinzel Decorative', serif;
+		font-weight: 900;
+		font-style: normal;
+	}
+
+	.noto-serif-georgian-thin {
+		font-family: 'Noto Serif Georgian', serif;
+		font-optical-sizing: auto;
+		font-weight: 100;
+		font-style: normal;
+		font-variation-settings: 'wdth' 100;
+	}
+
+	.noto-serif-georgian-extralight {
+		font-family: 'Noto Serif Georgian', serif;
+		font-optical-sizing: auto;
+		font-weight: 200;
+		font-style: normal;
+		font-variation-settings: 'wdth' 100;
+	}
+
+	.noto-serif-georgian-light {
+		font-family: 'Noto Serif Georgian', serif;
+		font-optical-sizing: auto;
+		font-weight: 300;
+		font-style: normal;
+		font-variation-settings: 'wdth' 100;
+	}
+
+	.noto-serif-georgian-regular {
+		font-family: 'Noto Serif Georgian', serif;
+		font-optical-sizing: auto;
+		font-weight: 400;
+		font-style: normal;
+		font-variation-settings: 'wdth' 100;
+	}
+
+	.noto-serif-georgian-medium {
+		font-family: 'Noto Serif Georgian', serif;
+		font-optical-sizing: auto;
+		font-weight: 500;
+		font-style: normal;
+		font-variation-settings: 'wdth' 100;
+	}
+
+	.noto-serif-georgian-semibold {
+		font-family: 'Noto Serif Georgian', serif;
+		font-optical-sizing: auto;
+		font-weight: 600;
+		font-style: normal;
+		font-variation-settings: 'wdth' 100;
+	}
+
+	.noto-serif-georgian-bold {
+		font-family: 'Noto Serif Georgian', serif;
+		font-optical-sizing: auto;
+		font-weight: 700;
+		font-style: normal;
+		font-variation-settings: 'wdth' 100;
+	}
+
+	.noto-serif-georgian-extrabold {
+		font-family: 'Noto Serif Georgian', serif;
+		font-optical-sizing: auto;
+		font-weight: 800;
+		font-style: normal;
+		font-variation-settings: 'wdth' 100;
+	}
+
+	.noto-serif-georgian-black {
+		font-family: 'Noto Serif Georgian', serif;
+		font-optical-sizing: auto;
+		font-weight: 900;
+		font-style: normal;
+		font-variation-settings: 'wdth' 100;
 	}
 </style>
