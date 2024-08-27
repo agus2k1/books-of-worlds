@@ -1,12 +1,15 @@
 <section class="book-promo noto-serif-georgian-regular">
 	<div class="promo-text">
-		<p class="author">AUTHOR: TRAVOR JAMES</p>
-		<h1 class="title">NEW ADVENTURE</h1>
+		<p class="clarification">AI-Driven Picks</p>
+		<h1 class="title">
+			Let <span class="cinzel-decorative-bold">AI</span> find your next read
+		</h1>
 		<p class="description">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+			Discover your next favorite book with AI-driven recommendations tailored
+			just for you. Explore endless possibilities and let our AI do the
+			searching.
 		</p>
-		<button class="buy-button">BUY NOW FOR $9.99</button>
+		<button class="start-button noto-serif-georgian-bold">GET STARTED</button>
 	</div>
 	<div class="promo-image">
 		<img src="/hero-book.png" alt="hero book" />
@@ -18,25 +21,27 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding-top: 2rem;
+		padding-top: 4rem;
 	}
 
 	.promo-text {
 		text-align: center;
-		max-width: 500px;
+		max-width: 800px;
 		color: #800000;
 	}
 
-	.author {
+	.clarification {
 		letter-spacing: 2px;
 		font-size: 14px;
 		margin-bottom: 10px;
+		text-transform: uppercase;
 	}
 
 	.title {
-		font-size: 48px;
+		font-size: 40px;
 		margin: 0;
 		margin-bottom: 20px;
+		text-transform: uppercase;
 	}
 
 	.description {
@@ -44,18 +49,24 @@
 		margin-bottom: 20px;
 	}
 
-	.buy-button {
-		background-color: white;
-		color: black;
+	.start-button {
+		background-color: #c08552;
+		color: white;
 		border: none;
-		padding: 10px 20px;
+		padding: 1rem 2rem;
 		font-size: 16px;
 		cursor: pointer;
+		border-radius: 1rem;
 		transition: background-color 0.3s ease;
 	}
 
-	.buy-button:hover {
-		background-color: #e0e0e0;
+	.start-button:hover {
+		background-color: #9f6f40;
+	}
+
+	.promo-image {
+		max-width: 50%;
+		height: auto;
 	}
 
 	.promo-image img {
