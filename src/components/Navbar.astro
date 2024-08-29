@@ -11,7 +11,7 @@ const { text1, text2, text3, text4 } = Astro.props
 
 <nav class="navbar">
 	<div class="cinzel-decorative-bold logo">BOW</div>
-	<ul class="items noto-serif-georgian-bold">
+	<ul class="items dosis-bold">
 		<li>
 			<a href="#">
 				{text1}
@@ -33,7 +33,7 @@ const { text1, text2, text3, text4 } = Astro.props
 			</a>
 		</li>
 	</ul>
-	<div class="right">SIGN IN</div>
+	<div class="button dosis-bold">SIGN IN</div>
 </nav>
 
 <style>
@@ -47,8 +47,7 @@ const { text1, text2, text3, text4 } = Astro.props
 	}
 
 	.logo,
-	.right {
-		flex: 1;
+	.button {
 		display: flex;
 		color: #982b1c;
 	}
@@ -59,10 +58,21 @@ const { text1, text2, text3, text4 } = Astro.props
 		margin-left: 2.5rem;
 	}
 
-	.right {
-		font-size: 1rem;
+	.button {
 		justify-content: right;
 		margin-right: 2.5rem;
+		background-color: #c08552;
+		color: white;
+		border: none;
+		padding: 1rem 2rem;
+		font-size: 16px;
+		cursor: pointer;
+		border-radius: 1rem;
+		transition: background-color 0.3s ease;
+	}
+
+	.button:hover {
+		background-color: #9f6f40;
 	}
 
 	.items {
